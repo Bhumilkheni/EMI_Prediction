@@ -1,0 +1,16 @@
+# --- Streamlit Cloud / app runtime (versions match the ones used to train the pickled models) ---
+streamlit>=1.50
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.7.2
+xgboost==3.2.0
+joblib>=1.4
+altair>=5
+# Optional: only for the "MLflow runs" tab (needs mlflow.db committed or a remote tracking server)
+# mlflow==3.17.2
+# --- everything needed to run the notebook ---
+mlflow==3.17.2
+matplotlib
+seaborn
+jupyter
+pyarrow

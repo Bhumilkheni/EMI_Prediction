@@ -1,0 +1,184 @@
+{
+  "class_order": [
+    "Eligible",
+    "High_Risk",
+    "Not_Eligible"
+  ],
+  "emi_min": 500,
+  "best_classifier": "XGBoost",
+  "best_regressor": "XGBoost",
+  "registry": {
+    "classifier": "EMI_Classifier@champion",
+    "regressor": "EMI_Regressor@champion"
+  },
+  "n_rows_used": 394735,
+  "n_train": 276314,
+  "classification_results": [
+    {
+      "model": "LogisticRegression",
+      "val_accuracy": 0.9108934301638236,
+      "val_precision_macro": 0.7643761391589242,
+      "val_recall_macro": 0.8955069104851835,
+      "val_f1_macro": 0.7821723010902867,
+      "val_f1_weighted": 0.9297065378667226,
+      "val_roc_auc_ovr": 0.9842277703069279,
+      "test_accuracy": 0.9078380706287683,
+      "test_precision_macro": 0.7632834392942592,
+      "test_recall_macro": 0.899397254574454,
+      "test_f1_macro": 0.780111757911552,
+      "test_f1_weighted": 0.9279385764725248,
+      "test_roc_auc_ovr": 0.9845850290830498,
+      "fit_s": 24.8
+    },
+    {
+      "model": "DecisionTree",
+      "val_accuracy": 0.9502955581827394,
+      "val_precision_macro": 0.8157575294185042,
+      "val_recall_macro": 0.928696301498042,
+      "val_f1_macro": 0.8482997713805878,
+      "val_f1_weighted": 0.9574265928609226,
+      "val_roc_auc_ovr": 0.9868659111756687,
+      "test_accuracy": 0.9478137508233268,
+      "test_precision_macro": 0.8105593135321931,
+      "test_recall_macro": 0.9262381720507041,
+      "test_f1_macro": 0.8431606379139827,
+      "test_f1_weighted": 0.955611684891654,
+      "test_roc_auc_ovr": 0.9847158451311623,
+      "fit_s": 23.9
+    },
+    {
+      "model": "RandomForest",
+      "val_accuracy": 0.9385407870292181,
+      "val_precision_macro": 0.7937614781854889,
+      "val_recall_macro": 0.9094359371537112,
+      "val_f1_macro": 0.8229224361718904,
+      "val_f1_weighted": 0.9484012949249765,
+      "val_roc_auc_ovr": 0.9896451290228211,
+      "test_accuracy": 0.9377649423249058,
+      "test_precision_macro": 0.7937531472951784,
+      "test_recall_macro": 0.9137247352697243,
+      "test_f1_macro": 0.8234256320700434,
+      "test_f1_weighted": 0.9480219821667963,
+      "test_roc_auc_ovr": 0.9899729307496962,
+      "fit_s": 57.6
+    },
+    {
+      "model": "XGBoost",
+      "val_accuracy": 0.9814558351629792,
+      "val_precision_macro": 0.9048743805116395,
+      "val_recall_macro": 0.9653711702823521,
+      "val_f1_macro": 0.9305550803551256,
+      "val_f1_weighted": 0.9825363714421329,
+      "val_roc_auc_ovr": 0.998343088628909,
+      "test_accuracy": 0.9806117106618703,
+      "test_precision_macro": 0.9008109649244819,
+      "test_recall_macro": 0.9660988357063826,
+      "test_f1_macro": 0.9281945984690507,
+      "test_f1_weighted": 0.9818335940618812,
+      "test_roc_auc_ovr": 0.9983735362651206,
+      "fit_s": 118.9
+    }
+  ],
+  "regression_results": [
+    {
+      "model": "LinearRegression",
+      "val_rmse": 2080.1564894605012,
+      "val_mae": 1409.761061219881,
+      "val_r2": 0.9276128291778619,
+      "val_mape": 66.9149606413613,
+      "test_rmse": 2104.8028887705595,
+      "test_mae": 1416.6532144319383,
+      "test_r2": 0.9251778287729738,
+      "test_mape": 65.95299293025604,
+      "fit_s": 1.8
+    },
+    {
+      "model": "DecisionTree",
+      "val_rmse": 877.6510991689745,
+      "val_mae": 321.91204994761745,
+      "val_r2": 0.9871141405774769,
+      "val_mape": 4.8612104400293505,
+      "test_rmse": 889.6826310080781,
+      "test_mae": 322.2024794784381,
+      "test_r2": 0.9866316542766388,
+      "test_mape": 5.067819352196399,
+      "fit_s": 24.6
+    },
+    {
+      "model": "RandomForest",
+      "val_rmse": 727.8915447156205,
+      "val_mae": 214.92100432661366,
+      "val_r2": 0.9911365472034852,
+      "val_mape": 3.278350819440494,
+      "test_rmse": 752.6493026627728,
+      "test_mae": 219.12222464878644,
+      "test_r2": 0.9904326255560745,
+      "test_mape": 3.5369508051519625,
+      "fit_s": 465.6
+    },
+    {
+      "model": "XGBoost",
+      "val_rmse": 345.57755877999097,
+      "val_mae": 141.35008905527187,
+      "val_r2": 0.9980021602412047,
+      "val_mape": 2.7231544048042218,
+      "test_rmse": 369.33094754842875,
+      "test_mae": 144.26009439885638,
+      "test_r2": 0.9976962314518014,
+      "test_mape": 2.797829020111414,
+      "fit_s": 60.5
+    }
+  ],
+  "clf_feature_importance": {
+    "num__affordability_ratio": 0.21092946827411652,
+    "cat__existing_loans_No": 0.08386102318763733,
+    "num__stress_ratio": 0.07380393147468567,
+    "num__credit_x_dti": 0.06785064935684204,
+    "cat__existing_loans_Yes": 0.03998933359980583,
+    "num__emi_to_income": 0.038456402719020844,
+    "cat__house_type_Rented": 0.03124139830470085,
+    "cat__employment_type_Government": 0.02996687777340412,
+    "cat__emi_scenario_Personal Loan EMI": 0.029317377135157585,
+    "num__savings_ratio": 0.026705743744969368,
+    "cat__employment_type_Private": 0.02597661316394806,
+    "num__current_emi_amount": 0.024077055975794792,
+    "num__requested_tenure": 0.02255568839609623,
+    "cat__employment_type_Self-employed": 0.021130012348294258,
+    "num__years_of_employment": 0.021119581535458565
+  },
+  "reg_feature_importance": {
+    "num__disposable_income": 0.48150694370269775,
+    "num__stress_ratio": 0.09276552498340607,
+    "cat__existing_loans_Yes": 0.0924331545829773,
+    "num__credit_x_dti": 0.06341327726840973,
+    "num__current_emi_amount": 0.03691891208291054,
+    "cat__existing_loans_No": 0.034882862120866776,
+    "num__affordability_ratio": 0.031012926250696182,
+    "num__monthly_salary": 0.02679227478802204,
+    "num__requested_emi_est": 0.02030331827700138,
+    "cat__employment_type_Government": 0.019687853753566742,
+    "cat__house_type_Rented": 0.011564847081899643,
+    "cat__employment_type_Private": 0.011101135984063148,
+    "num__savings_ratio": 0.010800057090818882,
+    "num__credit_score": 0.01026991754770279,
+    "num__expense_to_income": 0.009329624474048615
+  },
+  "confusion_matrix_test": [
+    [
+      10640,
+      303,
+      14
+    ],
+    [
+      99,
+      2427,
+      50
+    ],
+    [
+      15,
+      667,
+      44996
+    ]
+  ],
+  "trained_at": "2026-10-27 14:52"
+}
